@@ -1,6 +1,6 @@
 # FVTTTraveller
 
-An 'system' for Mongoose 1e Traveller and / or Traveller 2300 for Foundary Virtual TableTop.
+A 'system' for Mongoose 1e Traveller and / or Traveller 2300 for Foundary Virtual TableTop.
 https://foundryvtt.com/
 
 So far:
