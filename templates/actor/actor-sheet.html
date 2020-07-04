@@ -1,0 +1,207 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+		<img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+
+            <div class="resources grid grid-3col">
+              <div class="resource flex-group-center">
+                  <label class="resource-label">Current Endurance</label>
+                  <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" size=3 name="data.cend.value" value="{{data.cend.value}}" data-dtype="Number"/>
+                    <span> / </span>
+                    {{data.attributes.endurance.value}}
+                  </div>
+              </div>
+              <div class="resource flex-group-center">
+                  <label class="resource-label">Current Strength</label>
+                  <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" size=3 name="data.cstr.value" value="{{data.cstr.value}}" data-dtype="Number"/>
+                    <span> / </span>
+                    {{data.attributes.strength.value}}
+                  </div>
+              </div>
+              <div class="resource flex-group-center">
+                  <label class="resource-label">Current Dexterity</label>
+                  <div class="resource-content flexrow flex-center flex-between">
+                    <input type="text" size=3 name="data.cdex.value" value="{{data.cdex.value}}" data-dtype="Number"/>
+                    <span> / </span>
+                    {{data.attributes.dexterity.value}}
+                  </div>
+              </div>
+          </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+	<nav class="sheet-tabs tabs" data-group="primary">
+		<a class="item" data-tab="main">Sheet</a>
+		<a class="item" data-tab="description">Notes</a>
+		<a class="item" data-tab="items">Inventory</a>
+		<a class="item" data-tab="edit">Edit</a>
+	</nav>
+
+    {{!-- Sheet Body --}}
+	<section class="sheet-body">
+
+		<div class="tab main" data-group="primary" data-tab="main">
+			<div class="grid grid-3col">
+				<div class="flexrow flex-group-left flex-between">
+					<span class="ability-label">{{data.attributes.strength.label}}:</span>  {{data.attributes.strength.value}} / {{data.attributes.strength.modifier}}
+				</div>
+				<div class="flexrow flex-group-left flex-between">
+					<span class="ability-label">{{data.attributes.dexterity.label}}:</span>  {{data.attributes.dexterity.value}} / {{data.attributes.dexterity.modifier}}
+				</div>
+				<div class="flexrow flex-group-left flex-between">
+					<span class="ability-label">{{data.attributes.endurance.label}}:</span>  {{data.attributes.endurance.value}} / {{data.attributes.endurance.modifier}}
+				</div>
+				<div class="flexrow flex-group-left flex-between">
+					<span class="ability-label">{{data.attributes.intelligence.label}}:</span>  {{data.attributes.intelligence.value}} / {{data.attributes.intelligence.modifier}}
+				</div>
+				<div class="flexrow flex-group-left flex-between">
+					<span class="ability-label">{{data.attributes.education.label}}:</span>  {{data.attributes.education.value}} / {{data.attributes.education.modifier}}
+				</div>
+				<div class="flexrow flex-group-left flex-between">
+					<span class="ability-label">{{data.attributes.social.label}}:</span>  {{data.attributes.social.value}} / {{data.attributes.social.modifier}}
+				</div>
+			</div>
+
+      <div class="skills grid grid-2col">
+        <div class="skills flexrow flex-group-center gridcascade">
+          <h2 class="clearfix flexbreak">Skills</h2>
+          <div class="grid grid-3col">
+            {{#each data.skills as |skills key|}}
+              {{#if skills.show}}
+                <div class="skill-label">{{skills.label}}: </div>
+                <div class="skill-value">{{skills.value}}</div>
+                <div class="skill-rolls">SDEIEdSo</div>
+              {{/if}}
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
+		</div>
+
+		<div class="tab edit" data-group="primary" data-tab="edit">
+			<div class="grid grid-3col">
+				<div class="flexrow flex-group-center flex-between">
+					<label class="ability-label" for="data.attributes.strength.value">{{data.attributes.strength.label}}</label>
+					<input type="text" name="data.attributes.strength.value" value="{{data.attributes.strength.value}}" data-dtype="Number"/>
+					<span class="ability-mod"> / {{data.attributes.strength.modifier}}</span>
+				</div>
+				<div class="flexrow flex-group-center flex-between">
+					<label class="ability-label" for="data.attributes.dexterity.value">{{data.attributes.dexterity.label}}</label>
+					<input type="text" name="data.attributes.dexterity.value" value="{{data.attributes.dexterity.value}}" data-dtype="Number"/>
+					<span class="ability-mod"> / {{data.attributes.dexterity.modifier}}</span>
+				</div>
+				<div class="flexrow flex-group-center flex-between">
+					<label class="ability-label" for="data.attributes.endurance.value">{{data.attributes.endurance.label}}</label>
+					<input type="text" name="data.attributes.endurance.value" value="{{data.attributes.endurance.value}}" data-dtype="Number"/>
+					<span class="ability-mod"> / {{data.attributes.endurance.modifier}}</span>
+				</div>
+				<div class="flexrow flex-group-center flex-between">
+					<label class="ability-label" for="data.attributes.intelligence.value">{{data.attributes.intelligence.label}}</label>
+					<input type="text" name="data.attributes.intelligence.value" value="{{data.attributes.intelligence.value}}" data-dtype="Number"/>
+					<span class="ability-mod"> / {{data.attributes.intelligence.modifier}}</span>
+				</div>
+				<div class="flexrow flex-group-center flex-between">
+					<label class="ability-label" for="data.attributes.education.value">{{data.attributes.education.label}}</label>
+					<input type="text" name="data.attributes.education.value" value="{{data.attributes.education.value}}" data-dtype="Number"/>
+					<span class="ability-mod"> / {{data.attributes.education.modifier}}</span>
+				</div>
+				<div class="flexrow flex-group-center flex-between">
+					<label class="ability-label" for="data.attributes.social.value">{{data.attributes.social.label}}</label>
+					<input type="text" name="data.attributes.social.value" value="{{data.attributes.social.value}}" data-dtype="Number"/>
+					<span class="ability-mod"> / {{data.attributes.social.modifier}}</span>
+				</div>
+			</div>
+
+
+      <div class="skills grid grid-2col">
+
+        <div class="skills flexrow flex-group-center">
+
+          <div class="skills grid grid-2col">
+            {{#each data.skills as |skills key|}}
+              {{#if skills.show}}
+                {{#if skills.cascade}}
+                  <div class="skills flexrow flex-group-center">
+                    <label for="data.skills.{{key}}.value" class="resource-label">{{skills.label}}</label>
+                  </div>
+                  <div class="skills flexrow flex-group-center">
+                    <input type="text" name="data.skills.{{key}}.value" title = "This is a cascade skill, it can only be 0, any levels must be put into a specialization." value="{{skills.value}}" data-dtype="Number"/>
+                  </div>
+                {{else}}
+                  {{#if skills.parent}}
+                    <div class="skills flexrow flex-group-center">
+                      <label for="data.skills.{{key}}.value" class="resource-label">{{skills.label}}</label>
+                    </div>
+                    <div class="skills flexrow flex-group-center">
+                      <input type="text" name="data.skills.{{key}}.value" value="{{skills.value}}" data-dtype="Number"/>
+                    </div>
+                  {{else}}
+                    <div class="skills flexrow flex-group-center">
+                      <label for="data.skills.{{key}}.value" class="resource-label">{{skills.label}}</label>
+                    </div>
+                    <div class="skills flexrow flex-group-center">
+                      <input type="text" name="data.skills.{{key}}.value" value="{{skills.value}}" data-dtype="Number"/>
+                    </div>
+                  {{/if}}
+                {{/if}}
+              {{/if}}
+            {{/each}}
+
+            <div class="flexrow flex-group-center" style="grid-column-start: 1;grid-column-end:3;">
+              <h2 class="flexbreak">Add Skill:</h2>
+              <select name="data.addskillselect" style="width:200px;">
+                <option></option>
+                {{#each data.skills as |skills key|}}
+                  <option value="{{key}}">{{skills.label}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills flexrow flex-group-center">
+
+        </div>
+      </div>
+
+		</div>
+
+		{{!-- Biography Tab --}}
+		<div class="tab biography" data-group="primary" data-tab="description">
+			{{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+		</div>
+
+		{{!-- Owned Items Tab --}}
+		<div class="tab items" data-group="primary" data-tab="items">
+			<ol class="items-list">
+				<li class="item flexrow item-header">
+					<div class="item-image"></div>
+					<div class="item-name">Name</div>
+					<div class="item-controls">
+						<a class="item-control item-create" title="Create item" data-type="item"><i class="fas fa-plus"></i> Add item</a>
+					</div>
+				</li>
+			{{#each actor.items as |item id|}}
+				<li class="item flexrow" data-item-id="{{item._id}}">
+					<div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+					<h4 class="item-name">{{item.name}}</h4>
+					<div class="item-controls">
+						<a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+						<a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+					</div>
+				</li>
+			{{/each}}
+			</ol>
+		</div>
+
+		<div class="logo clearfix">Traveller</div>
+	</section>
+</form>

@@ -1,0 +1,771 @@
+{
+	"Actor": {
+		"types": ["character"],
+		"character": {
+			"name": "",
+			"biography": "",
+			"addskillselect": "",
+			"addskillvalue": "",
+			"cstr": {
+				"value": 0
+			},
+			"cdex": {
+				"value": 0
+			},
+			"cend": {
+				"value": 0
+			},
+			"attributes": {
+				"strength": {
+					"value": 0,
+					"label": "Strength",
+					"modifier": 0
+				},
+				"dexterity": {
+					"value": 0,
+					"label": "Dexterity",
+					"modifier": 0
+				},
+				"endurance": {
+					"value": 0,
+					"label": "Endurance",
+					"modifier": 0
+				},
+				"intelligence": {
+					"value": 0,
+					"label": "Intelligence",
+					"modifier": 0
+				},
+				"education": {
+					"value": 0,
+					"label": "Education",
+					"modifier": 0
+				},
+				"social": {
+					"value": 0,
+					"label": "Social",
+					"modifier": 0
+				}
+			},
+			"skills": {
+				"advocate": {
+					"label": "Advocate",
+					"value": -3,
+					"show": false
+				},
+				"admin": {
+					"label": "Admin",
+					"value": -3,
+					"show": false
+				},
+				"animals": {
+					"label": "Animals",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"riding": {
+					"label": "Animals - Riding",
+					"parent": "animals",
+					"value": -3,
+					"show": false
+				},
+				"training": {
+					"label": "Animals - Training",
+					"parent": "animals",
+					"value": -3,
+					"show": false
+				},
+				"veterinary": {
+					"label": "Animals - Veterinary",
+					"parent": "animals",
+					"value": -3,
+					"show": false
+				},
+				"farming": {
+					"label": "Animals - Farming",
+					"parent": "animals",
+					"value": -3,
+					"show": false
+				},
+				"athletics": {
+					"label": "Athletics",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"coordination": {
+					"label": "Athletics - Coordination",
+					"parent": "athletics",
+					"value": -3,
+					"show": false
+				},
+				"endurance": {
+					"label": "Athletics - Endurance",
+					"parent": "athletics",
+					"value": -3,
+					"show": false
+				},
+				"strength": {
+					"label": "Athletics - Strength",
+					"parent": "athletics",
+					"value": -3,
+					"show": false
+				},
+				"flying": {
+					"label": "Athletics - Flying",
+					"parent": "athletics",
+					"value": -3,
+					"show": false
+				},
+				"art": {
+					"label": "Art",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"acting": {
+					"label": "Art - Acting",
+					"parent": "art",
+					"value": -3,
+					"show": false
+				},
+				"dance": {
+					"label": "Art - Dance",
+					"parent": "art",
+					"value": -3,
+					"show": false
+				},
+				"holography": {
+					"label": "Art - Holography",
+					"parent": "art",
+					"value": -3,
+					"show": false
+				},
+				"instrument": {
+					"label": "Art - Instrument",
+					"parent": "art",
+					"value": -3,
+					"show": false
+				},
+				"sculpting": {
+					"label": "Art - Sculpting",
+					"parent": "art",
+					"value": -3,
+					"show": false
+				},
+				"writing": {
+					"label": "Art - Writing",
+					"parent": "art",
+					"value": -3,
+					"show": false
+				},
+				"astrogation": {
+					"label": "Astrogation",
+					"value": -3,
+					"show": false
+				},
+				"battledress": {
+					"label": "Battle Dress",
+					"value": -3,
+					"show": false
+				},
+				"broker": {
+					"label": "Broker",
+					"value": -3,
+					"show": false
+				},
+				"carouse": {
+					"label": "Carouse",
+					"value": -3,
+					"show": false
+				},
+				"comms": {
+					"label": "Comms",
+					"value": -3,
+					"show": false
+				},
+				"computers": {
+					"label": "Computers",
+					"value": -3,
+					"show": false
+				},
+				"deception": {
+					"label": "Deception",
+					"value": -3,
+					"show": false
+				},
+				"diplomat": {
+					"label": "Diplomat",
+					"value": -3,
+					"show": false
+				},
+				"driver": {
+					"label": "Drive",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"mole": {
+					"label": "Drive - Mole",
+					"parent": "driver",
+					"value": -3,
+					"show": false
+				},
+				"tracked": {
+					"label": "Drive - Tracked",
+					"parent": "driver",
+					"value": -3,
+					"show": false
+				},
+				"wheeled": {
+					"label": "Drive - Wheeled",
+					"parent": "driver",
+					"value": -3,
+					"show": false
+				},
+				"hovercraft": {
+					"label": "Drive - Hovercraft",
+					"parent": "driver",
+					"value": -3,
+					"show": false
+				},
+				"walker": {
+					"label": "Drive - Walker",
+					"parent": "driver",
+					"value": -3,
+					"show": false
+				},
+				"engineer": {
+					"label": "Engineer",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"manoeuverdrive": {
+					"label": "Engineer - Manoeuver Drive",
+					"parent": "engineer",
+					"value": -3,
+					"show": false
+				},
+				"stutterwarp": {
+					"label": "Engineer - Stutter Warp",
+					"parent": "engineer",
+					"value": -3,
+					"show": false
+				},
+				"engelectronics": {
+					"label": "Engineer - Electronics",
+					"parent": "engineer",
+					"value": -3,
+					"show": false
+				},
+				"lifesupport": {
+					"label": "Engineer - Life Support",
+					"parent": "engineer",
+					"value": -3,
+					"show": false
+				},
+				"power": {
+					"label": "Engineer - Power",
+					"parent": "engineer",
+					"value": -3,
+					"show": false
+				},
+				"explosives": {
+					"label": "Explosives",
+					"value": -3,
+					"show": false
+				},
+				"flyer": {
+					"label": "Flyer",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"rotor": {
+					"label": "Flyer - Rotor",
+					"parent": "flyer",
+					"value": -3,
+					"show": false
+				},
+				"wing": {
+					"label": "Flyer - Wing",
+					"parent": "flyer",
+					"value": -3,
+					"show": false
+				},
+				"vectoredthrust": {
+					"label": "Flyer - Vectored Thrust",
+					"parent": "flyer",
+					"value": -3,
+					"show": false
+				},
+				"airship": {
+					"label": "Flyer - Airship",
+					"parent": "flyer",
+					"value": -3,
+					"show": false
+				},
+				"tiltrotor": {
+					"label": "Flyer - Tilt-rotor",
+					"parent": "flyer",
+					"value": -3,
+					"show": false
+				},
+				"gambler": {
+					"label": "Gambler",
+					"value": -3,
+					"show": false
+				},
+				"gunner": {
+					"label": "Gunner",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"turrets": {
+					"label": "Gunner - Turrets",
+					"parent": "gunner",
+					"value": -3,
+					"show": false
+				},
+				"ortillery": {
+					"label": "Gunner - Ortillery",
+					"parent": "gunner",
+					"value": -3,
+					"show": false
+				},
+				"capitalweapons": {
+					"label": "Gunner - Capital Weapons",
+					"parent": "gunner",
+					"value": -3,
+					"show": false
+				},
+				"screens": {
+					"label": "Gunner - Screens",
+					"parent": "gunner",
+					"value": -3,
+					"show": false
+				},
+				"guncombat": {
+					"label": "Gun Combat",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"slug": {
+					"label": "Gun Combat - Slug",
+					"parent": "guncombat",
+					"value": -3,
+					"show": false
+				},
+				"energy": {
+					"label": "Gun Combat - Energy",
+					"parent": "guncombat",
+					"value": -3,
+					"show": false
+				},
+				"shotgun": {
+					"label": "Gun Combat - Shotgun",
+					"parent": "guncombat",
+					"value": -3,
+					"show": false
+				},
+				"sniper": {
+					"label": "Gun Combat - Sniper",
+					"parent": "guncombat",
+					"value": -3,
+					"show": false
+				},
+				"heavyweapons": {
+					"label": "Heavy Weapons",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"Launchers": {
+					"label": "Heavy Weapons - Launchers",
+					"parent": "heavyweapons",
+					"value": -3,
+					"show": false
+				},
+				"Man Portable Artillery": {
+					"label": "Heavy Weapons - Man Portable Artillery",
+					"parent": "heavyweapons",
+					"value": -3,
+					"show": false
+				},
+				"Field Artillery": {
+					"label": "Heavy Weapons - Field Artillery",
+					"parent": "heavyweapons",
+					"value": -3,
+					"show": false
+				},
+				"investigate": {
+					"label": "Investigate",
+					"value": -3,
+					"show": false
+				},
+				"informatics": {
+					"label": "Informatics",
+					"value": -3,
+					"show": false
+				},
+				"jackotrade": {
+					"label": "Jack Of All Trades",
+					"value": 0,
+					"show": false
+				},
+				"leadership": {
+					"label": "Leadership",
+					"value": -3,
+					"show": false
+				},
+				"lifesciences": {
+					"label": "Life Sciences",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"biology": {
+					"label": "Life Sciences - Biology",
+					"parent": "lifesciences",
+					"value": -3,
+					"show": false
+				},
+				"cybernetics": {
+					"label": "Life Sciences - Cybernetics",
+					"parent": "lifesciences",
+					"value": -3,
+					"show": false
+				},
+				"genetics": {
+					"label": "Life Sciences - Genetics",
+					"parent": "lifesciences",
+					"value": -3,
+					"show": false
+				},
+				"psionicology": {
+					"label": "Life Sciences - Psionicology",
+					"parent": "lifesciences",
+					"value": -3,
+					"show": false
+				},
+				"mechanic": {
+					"label": "Mechanic",
+					"value": -3,
+					"show": false
+				},
+				"medic": {
+					"label": "Medic",
+					"value": -3,
+					"show": false
+				},
+				"melee": {
+					"label": "Melee",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"blade": {
+					"label": "Melee - Blade",
+					"parent": "melee",
+					"value": -3,
+					"show": false
+				},
+				"bludgeon": {
+					"label": "Melee - Bludgeon",
+					"parent": "melee",
+					"value": -3,
+					"show": false
+				},
+				"naturalweapons": {
+					"label": "Melee - Natural Weapons",
+					"parent": "melee",
+					"value": -3,
+					"show": false
+				},
+				"unarmed": {
+					"label": "Melee - Unarmed",
+					"parent": "melee",
+					"value": -3,
+					"show": false
+				},
+				"navigation": {
+					"label": "Navigation",
+					"value": -3,
+					"show": false
+				},
+				"persuade": {
+					"label": "Persuade",
+					"value": -3,
+					"show": false
+				},
+				"pilot": {
+					"label": "Pilot",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"smallcraft": {
+					"label": "Pilot - Small Craft",
+					"parent": "pilot",
+					"value": -3,
+					"show": false
+				},
+				"spacecraft": {
+					"label": "Pilot - Spacecraft",
+					"parent": "pilot",
+					"value": -3,
+					"show": false
+				},
+				"captialships": {
+					"label": "Pilot - Captial Ships",
+					"parent": "pilot",
+					"value": -3,
+					"show": false
+				},
+				"physicalsciences": {
+					"label": "Physical Sciences",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"physics": {
+					"label": "Physical Sciences - Physics",
+					"parent": "physicalsciences",
+					"value": -3,
+					"show": false
+				},
+				"chemistry": {
+					"label": "Physical Sciences - Chemistry",
+					"parent": "physicalsciences",
+					"value": -3,
+					"show": false
+				},
+				"electronics": {
+					"label": "Physical Sciences - Electronics",
+					"parent": "physicalsciences",
+					"value": -3,
+					"show": false
+				},
+				"robotics": {
+					"label": "Physical Sciences - Robotics",
+					"parent": "physicalsciences",
+					"value": -3,
+					"show": false
+				},
+				"recon": {
+					"label": "Recon",
+					"value": -3,
+					"show": false
+				},
+				"remoteoperations": {
+					"label": "Remote Operations",
+					"value": -3,
+					"show": false
+				},
+				"seafarer": {
+					"label": "Seafarer",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"motorboat": {
+					"label": "Seafarer - Motorboat",
+					"parent": "seafarer",
+					"value": -3,
+					"show": false
+				},
+				"oceanships": {
+					"label": "Seafarer - Ocean Ships",
+					"parent": "seafarer",
+					"value": -3,
+					"show": false
+				},
+				"submarine": {
+					"label": "Seafarer - Submarine",
+					"parent": "seafarer",
+					"value": -3,
+					"show": false
+				},
+				"sail": {
+					"label": "Seafarer - Sail",
+					"parent": "seafarer",
+					"value": -3,
+					"show": false
+				},
+				"sensors": {
+					"label": "Sensors",
+					"value": -3,
+					"show": false
+				},
+				"socialsciences": {
+					"label": "Social Sciences",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"archeology": {
+					"label": "Social Sciences - Archeology",
+					"parent": "socialsciences",
+					"value": -3,
+					"show": false
+				},
+				"history": {
+					"label": "Social Sciences - History",
+					"parent": "socialsciences",
+					"value": -3,
+					"show": false
+				},
+				"linguistics": {
+					"label": "Social Sciences - Linguistics",
+					"parent": "socialsciences",
+					"value": -3,
+					"show": false
+				},
+				"philosophy": {
+					"label": "Social Sciences - Philosophy",
+					"parent": "socialsciences",
+					"value": -3,
+					"show": false
+				},
+				"psychology": {
+					"label": "Social Sciences - Psychology",
+					"parent": "socialsciences",
+					"value": -3,
+					"show": false
+				},
+				"sophontology": {
+					"label": "Social Sciences - Sophontology",
+					"parent": "socialsciences",
+					"value": -3,
+					"show": false
+				},
+				"spacesciences": {
+					"label": "Space Sciences",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"planetology": {
+					"label": "Space Sciences - Planetology",
+					"parent": "spacesciences",
+					"value": -3,
+					"show": false
+				},
+				"xenobiology": {
+					"label": "Space Sciences - Xenobiology",
+					"parent": "spacesciences",
+					"value": -3,
+					"show": false
+				},
+				"stealth": {
+					"label": "Stealth",
+					"value": -3,
+					"show": false
+				},
+				"steward": {
+					"label": "Steward",
+					"value": -3,
+					"show": false
+				},
+				"streetwise": {
+					"label": "Streetwise",
+					"value": -3,
+					"show": false
+				},
+				"survival": {
+					"label": "Survival",
+					"value": -3,
+					"show": false
+				},
+				"tactics": {
+					"label": "Tactics",
+					"cascade": true,
+					"value": -3,
+					"show": false
+				},
+				"navaltactics": {
+					"label": "Tactics - Naval",
+					"parent": "tactics",
+					"value": -3,
+					"show": false
+				},
+				"militarytactics": {
+					"label": "Tactics - Military",
+					"parent": "tactics",
+					"value": -3,
+					"show": false
+				},
+				"vaccsuit": {
+					"label": "Vacc Suit",
+					"value": -3,
+					"show": false
+				},
+				"zerog": {
+					"label": "Zero-G",
+					"value": -3,
+					"show": false
+				}
+			}
+		}
+	},
+
+
+	"Item": {
+		"types": ["equipment","weapon","armor","implant","psionic","starship"],
+
+		"templates": {
+			"physicalitem": {
+				"name": "",
+				"description": "",
+				"quantity": 1,
+				"weight": 0,
+				"techlevel": 0,
+				"cost": 0
+			},
+			"psipower": {
+				"Telepathy": -3,
+				"Clairvoyance": -3,
+				"Telekinesis": -3,
+				"Awareness": -3,
+				"Teleportation": -3,
+				"Psistr": 0
+			},
+			"craft": {
+					"Tons": 0
+			}
+		},
+
+		"equipment": {
+			"templates": ["physicalitem"]
+		},
+		"weapon": {
+			"templates": ["physicalitem"],
+			"attack": "",
+			"damage": "",
+			"rangemod": [],
+			"reqskill": ""
+		},
+		"armor": {
+			"templates": ["physicalitem"],
+			"protection": ""
+		},
+		"implant": {
+			"templates": ["physicalitem"],
+			"rating": ""
+		},
+		"psionic": {
+			"templates": ["psipower"],
+			"power": ""
+		},
+		"starship": {
+			"templates": ["craft"],
+			"name": ""
+		}
+
+	}
+
+}
