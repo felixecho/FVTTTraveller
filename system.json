@@ -22,8 +22,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "cend",
   "secondaryTokenAttribute": "cstr",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/felixecho/FVTTTraveller",
+  "manifest": "https://github.com/felixecho/FVTTTraveller/blob/master/system.json",
+  "download": "https://github.com/felixecho/FVTTTraveller/archive/master.zip",
   "license": "LICENSE.txt"
 }
