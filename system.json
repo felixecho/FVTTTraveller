@@ -23,7 +23,7 @@
   "primaryTokenAttribute": "cend",
   "secondaryTokenAttribute": "cstr",
   "url": "https://github.com/felixecho/FVTTTraveller",
-  "manifest": "https://github.com/felixecho/FVTTTraveller/blob/master/system.json",
+  "manifest": "https://github.com/felixecho/FVTTTraveller/raw/master/system.json",
   "download": "https://github.com/felixecho/FVTTTraveller/archive/master.zip",
   "license": "LICENSE.txt"
 }
